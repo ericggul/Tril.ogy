@@ -2,13 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { Link, match } from 'react-router-dom';
 import { ReactSVG } from 'react-svg';
 import styles from './SummaryPage.module.scss';
-import useMousePosition from '../../hooks/useMousePosition';
+
 import { projects } from '../../utils/Constants';
 import Navigator from '../../components/Navigator/Navigator';
 
+import useMousePosition from '../../hooks/useMousePosition';
+import useTouchPosition from '../../hooks/useTouchPosition';
+import UseMediaQuery from '../../hooks/useMediaQuery';
+
+import SummaryDesktopPage from '../../components/SummaryPageRelated/SummaryDesktopPage';
+import SummaryMobilePage from '../../components/SummaryPageRelated/SummaryMobilePage';
+
 
 function SummaryPage({ match }){
-    const { x, y } = useMousePosition();
+    const isDeviceWidthWideAsDesktop = UseMediaQuery('(min-width: 600px)');
+
+
     const id = Number(match.params.id);
     const project = projects.find((project) => project.id === id);
 
@@ -22,30 +31,21 @@ function SummaryPage({ match }){
         </div>
 
     return(
-        <div 
-            className={styles.main}
-            style={{background: `radial-gradient( 30px 30px at ${x}px ${y}px, #d82f2f, #222)`}}
-        >   
-            <Navigator 
-                    projectId={id}
-            />            
-            <div className={styles.header}>
-                {project?.description.type}: {project?.description.assign}
-            </div>
+        <>
+            {isDeviceWidthWideAsDesktop && 
+                <SummaryDesktopPage
+                    id={id}
+                    project={project}
+                />
+            }
+            {!isDeviceWidthWideAsDesktop && 
+                <SummaryMobilePage
+                    id={id}
+                    project={project}
+                />
+            }
 
-            <a href={project?.description.link}>
-                <div className={styles.img} onMouseEnter={()=>console.log('entered')} onMouseLeave={()=>setOpacity(0)}>
-                    {id!==4 ? <img src={project?.image} alt={project?.id} /> : <ReactSVG src={project?.image} />}
-                </div>
-            </a>
-            <div className={styles.name}>
-                {project?.description.name}
-            </div>
-            <div className={styles.description}>
-                {project?.description.introduction}
-            </div>
-
-        </div>
+        </>
     )
 
 }

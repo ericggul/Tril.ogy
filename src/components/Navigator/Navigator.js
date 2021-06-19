@@ -3,6 +3,8 @@ import { Link, match } from 'react-router-dom';
 import styles from './Navigator.module.scss';
 import { projects } from '../../utils/Constants';
 
+import UseMediaQuery from '../../hooks/useMediaQuery';
+
 function Navigator({ projectId }){
     console.log(projectId);
 

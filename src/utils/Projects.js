@@ -2,7 +2,7 @@ export const P0 = {
     name: 'Identity',
     type: 'P0',
     assign: 'Self Introduction',
-    introduction: `My style of revealing myself, with an influence from Piet Mondrian. Three symbolic icons are used to represent myself: Black Swan, Statue of Liberty, and Andy Warhol's Campbell's Soup Cans. Click on each rectangle to reveal myself.`,
+    introduction: `An unique style of revealing myself, with an influence from Piet Mondrian. Three symbolic icons are used to represent myself: Black Swan, Statue of Liberty, and Andy Warhol's Campbell's Soup Cans. Click on each rectangle to reveal myself.`,
     link: 'https://ericggul.github.io/DTC/Assignment%201/P0%20Revised%202/index.html'
 }
 
@@ -26,7 +26,7 @@ export const P2 = {
     New Towns are like 'Liberty Street and Ford Avenue': A random street and random avenue, filled with identical apartments, which can be find anywhere but cannot be distinguished.
     However, their real situation are positioning the opposite direction, which can be summarized as 'Anti Liberty and Distorted Fordism': Anti-Liberty in terms of its lifestyle, and Distorted Fordism in terms of its failure of delivering cheap mass-produced residential flats.
     This infographics highlights this paradox in six dimensions, questioning and criticizing the lifestyle of many Koreans.`,
-    link: ``
+    link: `https://ericggul.github.io/plz/#/P2`
 }
 
 export const P3 = {

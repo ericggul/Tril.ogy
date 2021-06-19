@@ -2,10 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { AnimationPresence, motion } from 'framer-motion';
 import styles from './MainPage.module.scss';
+
 import useMousePosition from '../../hooks/useMousePosition';
+import useTouchPosition from '../../hooks/useTouchPosition';
+import UseMediaQuery from '../../hooks/useMediaQuery';
 
 function MainPage(){
-    const { x, y } = useMousePosition();
+    const isDeviceWidthWideAsDesktop = UseMediaQuery('(min-width: 600px)');
+    const { mouseX, mouseY } = useMousePosition();
+    const { touchX, touchY } = useTouchPosition();
+
     const P0Link = "https://ericggul.github.io/DTC/Assignment%201/P0%20Revised%202/index.html";
     const P1Link = "https://ericggul.github.io/DTC/P1/";
 
@@ -35,7 +41,12 @@ function MainPage(){
 
     return(
         <div className={styles.main}
-        style={{background: `radial-gradient( 200px 200px at ${x}px ${y}px, ${gradientColor}, #222)`}}>
+            style={{
+                background: isDeviceWidthWideAsDesktop ? 
+                    `radial-gradient(200px 200px at ${mouseX}px ${mouseY}px, #d82f2f, #222)` :
+                    `radial-gradient(200px 200px at ${touchX}px ${touchY}px, #d82f2f, #222)` 
+            }}
+        >
             <Link to="/Summary/0">
                 <div className={styles.link1} onMouseEnter={() => setP0(true)} onMouseLeave={() =>setP0(false)}>
                     P0

@@ -22,6 +22,14 @@
             }
         }
     }
+}
 
-
+@media(max-width: 600px){
+    .navigator{
+        grid-template-columns: 20vw 20vw 20vw 20vw;
+        left: 0;
+        position: relative;
+        margin-left: 2rem;
+        text-align: center;
+    }
 }
