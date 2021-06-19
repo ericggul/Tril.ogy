@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main{
+    background-color: #222;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    // background: radial-gradient(farthest-corner at 40px 40px, #d82f2f, #101764);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hole{
+        position: relative;
+        height: 100vh;
+        width: 17.9vw;
+        overflow: hidden;
+
+        &:after{
+            content: '';
+            position: absolute;
+            top: calc(50vh - 15vw);
+            left: 1.45vw;
+            width: 15vw;
+            height: 30vw;
+            box-shadow: 0px 0px 0px 2000px #222;
+        }
+    }
+
+    .semihole{
+        position: relative;
+        height: 100vh;
+        width: 17.9vw;
+        overflow: hidden;
+
+        &:after{
+            content: '';
+            position: absolute;
+            top: calc(50vh - 15vw);
+            left: 1.45vw;
+            width: 15vw;
+            height: 15vw;
+            box-shadow: 0px 0px 0px 2000px #222;
+        }
+    }
+    
+    .dummy{
+        position: relative;
+        height: 100vh;
+        width: 14.2vw;
+        background: #222;
+    }
+
+    
+
+    .link{
+        text-decoration: none;
+    }
+
+    .text{
+        position: absolute;
+        left: 69.65vw;
+        width: 15vw;
+        height: 5vw;
+        top: calc( 50vh + 11vw);
+        color: white;
+        font-size: 3.7vw;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+// @media screen and (max-width: 700px){
+//     .main{
+//         .hole{
+//             width: 21.8vw;
+//             &:after{
+//                 width: 18vw;
+//                 height: 36vw;
+//                 left: 1.9vw;
+//             }
+//         }
+
+//         .semihole{
+//             width: 21.8vw;
+//             &:after{
+//                 width: 18vw;
+//                 height: 18vw;
+//                 left: 1.9vw;
+//             }
+//         }
+
+//         .dummy{
+//             width: 6.4vw;
+//         }
+
+//         .text{
+//             font-size: 1rem;
+//             align-items: center;
+//             text-align: left;
+//         }
+//     }
+
+// }
