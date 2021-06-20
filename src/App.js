@@ -14,8 +14,8 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/main" component={MainPage} />
-        <Route exact path="/intro" component={IntroPage} />
-        <Route exact path="/introtest" component={IntroTest} />
+        {/* <Route exact path="/intro" component={IntroPage} /> */}
+        <Route exact path="/intro" component={IntroTest} />
         <Route exact path="/summary/:id" component={SummaryPage} />
         <Route exact path="/P2" component={P2} />
         

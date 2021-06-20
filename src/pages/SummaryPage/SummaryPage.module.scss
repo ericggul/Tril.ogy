@@ -30,6 +30,10 @@
         }
     }
 
+    .video{
+        margin-top: 0.5rem;
+    }
+
     .hoverMessage{
         color: white;
         opacity: 0;
@@ -44,7 +48,7 @@
         margin-bottom: 10rem;
         padding: 2rem;
         width: 70%;
-        color: rgb(95, 95, 95);
+        color: rgb(200, 200, 200);
         transition: .1s ease-in;
 
         &:hover{
@@ -69,6 +73,10 @@
             margin-top: 3rem;
             margin-left: 2rem;
             margin-bottom: 0;
+        }
+
+        .video{
+            margin: 0;
         }
         
         .name{

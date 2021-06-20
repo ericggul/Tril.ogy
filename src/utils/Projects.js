@@ -33,10 +33,24 @@ export const P3 = {
     name: 'Geur Van Eeen Tulip (Scent of a Tulip)',
     type: 'P3',
     assign: 'Data Visualization',
-    introduction: `A Geometrical Axiom, such as "Orthocenter, Circumcenter, Gravity Points share collinearity.", are derived from our Accumulated Abstract Knowledge.
-    However, in order for us to understand the geometrical axiom, we should always interpret the abstract knowledge into the descriptive geometrical shapes.
-    The Euclidean lines and circles above offers us a bridge that links to the abstract world, but still it takes part within the descriptive images.
-    My purpose of this project was to create the new usage of these Euclidean images, by highlighting its descriptiveness rather than its abstractness.
-    Can Euclidean lines and circles themselves create an aesthetic impression?`,
+    introduction: `"History teaches us that man learns nothing from history", Hegel had quoted. 
+    In recent years, stock price of IT companies, notably FAANG and Microsoft, had risen tremendously, reminding the historical bubble of dutch tulip.
+    This Data Visualization shows the recent 5 years stock price distribution of FAANG and Microsoft, highlighting collective madness underlying the current IT stock market.
+    The presentation of stock price is architected based on experimential and regressive approach, rather than the inductive approach: 
+    Experiemntial and regressive approach states that the stock price will soar down, as currently the price is overwhelmed. The inductive approach, on the other hand, claims that stock price will keep to rise, as it had for the past 5 years.
+    Traditional Time-Series graph with time on x-axis and price on y-axis had caused people to think indutively. Contrastly, this visualization displaying the stock price distribution assists people to view the current situation from the regressive perspective.`,
+    link: 'https://ericggul.github.io/DTC/P1/'
+}
+
+export const P35 = {
+    name: 'In Coin We Trust',
+    type: 'P3.5',
+    assign: 'Data Visualization(Beta)',
+    introduction: `This data visualization uses the same regressive approach used at the P3, displaying the Bitcoin price distribution for past 5 years.
+    However, the tone of narratives behind the presentation is somehow different.
+    For the FAANG companies in P3, it was possible to present constructive criticism arguing that current stock market is overwhelmed.
+    Here for the Bitcoin, no criticism is allowed: The range of bubble had already gone beyond the common sense. 
+    I had no choice but to leave a cynical ridicule to this blindly religious status quo.
+    `,
     link: 'https://ericggul.github.io/DTC/P1/'
 }

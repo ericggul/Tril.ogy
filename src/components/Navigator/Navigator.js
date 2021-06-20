@@ -13,7 +13,7 @@ function Navigator({ projectId }){
     const navigator =  
         <div className={styles.navigator}>
             {projects.map((project,i)=>(
-                <Link to={ i !== projectId ? `/Summary/${i}` : `/Main`}>
+                <Link to={ i !== projectId ? `/Summary/${i}` : `/intro`}>
                     <div>
                         { i !== projectId ? project.description.type : 'Home'}
                     </div>

@@ -13,6 +13,8 @@ import UseMediaQuery from '../../hooks/useMediaQuery';
 import SummaryDesktopPage from '../../components/SummaryPageRelated/SummaryDesktopPage';
 import SummaryMobilePage from '../../components/SummaryPageRelated/SummaryMobilePage';
 
+import Footer from '../../components/Footer/Footer';
+
 
 function SummaryPage({ match }){
     const isDeviceWidthWideAsDesktop = UseMediaQuery('(min-width: 600px)');
@@ -44,6 +46,7 @@ function SummaryPage({ match }){
                     project={project}
                 />
             }
+
 
         </>
     )

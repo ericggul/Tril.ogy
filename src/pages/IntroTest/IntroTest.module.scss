@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: #222;
 }
 
 .main{
@@ -71,6 +72,28 @@ body{
         font-size: 3.7vw;
         cursor: pointer;
         text-decoration: none;
+    }
+
+    .guide{
+        color: white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        top: calc(50vh + 20vw);
+        transition: ease-in 0.5s;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .main{
+        .guide{
+            font-size: 0.5px;
+            top: calc(75vh);
+        }
     }
 }
 
