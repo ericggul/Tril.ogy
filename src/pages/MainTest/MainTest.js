@@ -37,27 +37,51 @@ function MainTest(){
             </div>
 
             <div className={styles.main_description}>
-                <div>
-                    A web exhibition of 3.5 projects
+                <div className={styles.ein}>
+                    <div>
+                        Design Thinking for Communication 2021-1
+                    </div>
+                    <div>
+                        3.5 projects
+                    </div>
+                    <div>
+                        Independent Topics
+                    </div>
+                    <div>
+                        Series of Philosophy<br /><br />
+                    </div>
                 </div>
-                <div>
-                    Design Thinking for Communication 2021-1
+
+                <div className={styles.zwei}>
+                    <div>
+                        P1: Anti-Platonism, an eternal recurrence
+                    </div>
+                    <div>
+                        P2: Simulacres et Simulation
+                    </div>
+                    <div>
+                        P3: Experimental Skepticism
+                    </div>
+                    <div>
+                        P3.5: Cynical Laughter <br /><br /><br /><br />
+                    </div>
                 </div>
-                <div>
-                    Independent topics sharing common <br /><br />
+
+                <div className={styles.drei}>
+                    <div>
+                        P1: Irony when we have to think 'subjectively' in order to derive an 'objective'. Born, Live and Die, that is a natural cycle.
+                    </div>
+                    <div>
+                        P2: We had built similar fordistic apartments to mass-produce residences in low price. We overpay an apartment due to such similarity. 
+                    </div>
+                    <div>
+                        P3: Favor of experimental 'regression to mean' over inductive linear regression. Criticism on overwhelmed IT stock market.
+                    </div>
+                    <div>
+                        P3.5: Criticism on an overwhelmed crpytocurrency: Laughter is sometimes strogner than criticism itself.
+                    </div>
                 </div>
-                <div>
-                    P1: 
-                </div>
-                <div>
-                    P2: 
-                </div>
-                <div>
-                    P3: 
-                </div>
-                <div>
-                    P3.5: 
-                </div>
+
 
             </div>
 

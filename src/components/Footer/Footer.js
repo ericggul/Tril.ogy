@@ -10,7 +10,7 @@ function Footer(){
     
     return(
             <div className={styles.footer}> 
-            <Link to="/MainTest">
+            <Link to="/main">
                 Tril.ogy = Tril.5gy
                 </Link>
             </div>

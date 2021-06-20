@@ -16,8 +16,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/main" component={MainPage} />
-        <Route exact path="/maintest" component={MainTest} />
+        {/* <Route exact path="/main" component={MainPage} /> */}
+        <Route exact path="/main" component={MainTest} />
         {/* <Route exact path="/intro" component={IntroPage} /> */}
         <Route exact path="/intro" component={IntroTest} />
         <Route exact path="/summary/:id" component={SummaryPage} />
