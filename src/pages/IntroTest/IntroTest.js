@@ -62,7 +62,7 @@ function IntroTest(){
             </Link>
 
             <div className={styles.guide} style={{opacity : guide ?  '1' : '0'}}>
-                Touch the screen
+                Swipe the screen
             </div>
         </div>
     )
