@@ -39,7 +39,7 @@ export const P3 = {
     The presentation of stock price is architected based on experimential and regressive approach, rather than the inductive approach: 
     Experiemntial and regressive approach states that the stock price will soar down, as currently the price is overwhelmed. The inductive approach, on the other hand, claims that stock price will keep to rise, as it had for the past 5 years.
     Traditional Time-Series graph with time on x-axis and price on y-axis had caused people to think indutively. Contrastly, this visualization displaying the stock price distribution assists people to view the current situation from the regressive perspective.`,
-    link: 'https://ericggul.github.io/DTC/P1/'
+    link: 'https://ericggul.github.io/plz/#/P3'
 }
 
 export const P35 = {
@@ -52,5 +52,5 @@ export const P35 = {
     Here for the Bitcoin, no criticism is allowed: The range of bubble had already gone beyond the common sense. 
     I had no choice but to leave a cynical ridicule to this blindly religious status quo.
     `,
-    link: 'https://ericggul.github.io/DTC/P1/'
+    link: 'https://ericggul.github.io/plz/#/P35'
 }
