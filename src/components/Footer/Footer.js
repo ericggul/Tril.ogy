@@ -9,9 +9,11 @@ function Footer(){
 
     
     return(
-        <div className={styles.footer}> 
-            Tril.ogy = Tril.5gy
-        </div>
+            <div className={styles.footer}> 
+            <Link to="/MainTest">
+                Tril.ogy = Tril.5gy
+                </Link>
+            </div>
     )
 }
 

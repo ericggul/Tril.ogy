@@ -25,7 +25,7 @@ export default function SummaryDesktopPage({ id, project }) {
                 {project?.description.type}: {project?.description.assign}
             </div>
 
-            <a href={project?.description.link}>
+            <a href={ project?.description.link}>
                 <div className={styles.img}>
                 <img src={project?.image} alt={project?.id} />
                 </div>
