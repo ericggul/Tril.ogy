@@ -122,8 +122,10 @@ body{
 @media screen and (max-width: 700px){
     .main{
         .guide{
-            font-size: 0.5px;
-            top: calc(75vh);
+            font-size: 0.8rem;
+            top: 75vh;
+            color: white;
+            z-index: 100;
         }
     }
 }

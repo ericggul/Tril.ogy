@@ -56,11 +56,12 @@ function IntroTest(){
 
             <Link to="/main" className={styles.link}>
                 <div className={styles.text}>
-                    Tril.ogy
+                    Tril.ogy 
+     
                 </div>
             </Link>
 
-            <div className={ styles.guide} style={{opacity : guide ?  '1' : '0'}}>
+            <div className={styles.guide} style={{opacity : guide ?  '1' : '0'}}>
                 Touch the screen
             </div>
         </div>
