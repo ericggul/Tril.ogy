@@ -40,10 +40,18 @@ function IntroTest(){
             }}
         >   
             <div className={styles.dummy} />
-            <Link to="/Summary/0"><div className={styles.hole} /></Link>
-            <Link to="/Summary/1"><div className={styles.hole} /></Link>
-            <Link to="/Summary/2"><div className={styles.hole} /></Link>
-            <Link to="/Summary/3"><div className={styles.semihole} /></Link>
+            <div className={styles.large_hole}>
+                <div className={styles.upperc} />
+                <div className={styles.holes}>
+                    <Link to="/Summary/0"><div className={styles.hole} /></Link>
+                    <Link to="/Summary/1"><div className={styles.hole} /></Link>
+                    <Link to="/Summary/2"><div className={styles.hole} /></Link>
+                    <div className={styles.agg}>
+                        <Link to="/Summary/3"><div className={styles.semihole} /></Link>
+                    </div>
+                </div>
+                <div className={styles.upperc} />
+            </div>
             <div className={styles.dummy} />
 
             <Link to="/main" className={styles.link}>
